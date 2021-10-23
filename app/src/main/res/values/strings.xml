@@ -12,4 +12,15 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_bicep">Bicep Workouts</string>
+    <string name="menu_tricep">Tricep Workouts</string>
+    <string name="menu_shoulder">Shoulder Workouts</string>
+    <string name="menu_traps">Traps Workouts</string>
+    <string name="menu_forearm">Forearm Workouts</string>
+    <string name="menu_legs">Leg Workouts</string>
+    <string name="menu_plans">Workout Plans</string>
+    <string name="menu_create">Create a Workout Plan</string>
+    <string name="menu_rest">Rest Timer</string>
+    <string name="menu_information">More Information</string>
+    <string name="menu_bug">Report a Bug</string>
 </resources>

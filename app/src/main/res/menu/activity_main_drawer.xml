@@ -11,47 +11,47 @@
         <item
             android:id="@+id/bicep_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
-            android:title="Bicep Workouts" />
+            android:title="@string/menu_bicep" />
         <item
             android:id="@+id/tricep_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
-            android:title="Tricep Workouts" />
+            android:title="@string/menu_tricep" />
         <item
             android:id="@+id/shoulder_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
-            android:title="Shoulder Workouts" />
+            android:title="@string/menu_shoulder" />
         <item
             android:id="@+id/traps_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
-            android:title="Traps Workouts" />
+            android:title="@string/menu_traps" />
         <item
             android:id="@+id/forearm_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
-            android:title="Forearm Workouts" />
+            android:title="@string/menu_forearm" />
         <item
             android:id="@+id/legs_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
-            android:title="Leg Workouts" />
+            android:title="@string/menu_legs" />
         <item
-            android:id="@+id/workout_nav"
+            android:id="@+id/plans_nav"
             android:icon="@drawable/ic_baseline_list_24"
-            android:title="Workout Plans" />
+            android:title="@string/menu_plans" />
         <item
             android:id="@+id/create_workout_nav"
             android:icon="@drawable/ic_baseline_create_24"
-            android:title="Create a Workout Plan" />
+            android:title="@string/menu_create" />
         <item
             android:id="@+id/rest_nav"
             android:icon="@drawable/ic_baseline_timer_24"
-            android:title="Rest Timer" />
+            android:title="@string/menu_rest" />
         <item
-            android:id="@+id/more_info_nav"
+            android:id="@+id/info_nav"
             android:icon="@drawable/ic_baseline_info_24"
-            android:title="More Information" />
+            android:title="@string/menu_information" />
         <item
             android:id="@+id/report_nav"
             android:icon="@drawable/ic_baseline_bug_report_24"
-            android:title="Report a Bug" />
+            android:title="@string/menu_bug" />
 
 
     </group>

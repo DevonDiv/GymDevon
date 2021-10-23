@@ -9,4 +9,54 @@
         android:name="devondivinecz.com.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/bicep_nav"
+        android:name="devondivinecz.com.BicepViewPager.BicepFragment"
+        android:label="Bicep Workouts"
+        tools:layout="@layout/fragment_bicep" />
+    <fragment
+        android:id="@+id/forearm_nav"
+        android:name="devondivinecz.com.ForearmViewPager.ForearmFragment"
+        android:label="Forearm Workouts"
+        tools:layout="@layout/fragment_forearm" />
+    <fragment
+        android:id="@+id/legs_nav"
+        android:name="devondivinecz.com.LegViewPager.LegFragment"
+        android:label="Leg Workouts"
+        tools:layout="@layout/fragment_leg" />
+    <fragment
+        android:id="@+id/plans_nav"
+        android:name="devondivinecz.com.PlansViewPager.PlansFragment"
+        android:label="Workout Plans"
+        tools:layout="@layout/fragment_plans" />
+    <fragment
+        android:id="@+id/shoulder_nav"
+        android:name="devondivinecz.com.ShoulderViewPager.ShoulderFragment"
+        android:label="Shoulder Workouts"
+        tools:layout="@layout/fragment_shoulder" />
+    <fragment
+        android:id="@+id/traps_nav"
+        android:name="devondivinecz.com.TrapsViewPager.TrapsFragment"
+        android:label="Trap Workouts"
+        tools:layout="@layout/fragment_traps" />
+    <fragment
+        android:id="@+id/tricep_nav"
+        android:name="devondivinecz.com.TricepViewPager.TricepFragment"
+        android:label="Tricep Workouts"
+        tools:layout="@layout/fragment_tricep" />
+    <fragment
+        android:id="@+id/create_workout_nav"
+        android:name="devondivinecz.com.CreatePlansFragment"
+        android:label="Create Workout Plan"
+        tools:layout="@layout/fragment_create_plans" />
+    <fragment
+        android:id="@+id/info_nav"
+        android:name="devondivinecz.com.InformationFragment"
+        android:label="More Information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/report_nav"
+        android:name="devondivinecz.com.ReportBugFragment"
+        android:label="Report a Bug"
+        tools:layout="@layout/fragment_report_bug" />
 </navigation>
