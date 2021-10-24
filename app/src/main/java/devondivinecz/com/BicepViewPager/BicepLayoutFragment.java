@@ -3,20 +3,21 @@ package devondivinecz.com.BicepViewPager;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import devondivinecz.com.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BicepFragment#newInstance} factory method to
+ * Use the {@link BicepLayoutFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BicepFragment extends Fragment {
+public class BicepLayoutFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,7 +28,7 @@ public class BicepFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BicepFragment() {
+    public BicepLayoutFragment() {
         // Required empty public constructor
     }
 
@@ -37,11 +38,11 @@ public class BicepFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BicepFragment.
+     * @return A new instance of fragment BicepLayoutFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BicepFragment newInstance(String param1, String param2) {
-        BicepFragment fragment = new BicepFragment();
+    public static BicepLayoutFragment newInstance(String param1, String param2) {
+        BicepLayoutFragment fragment = new BicepLayoutFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,11 +63,17 @@ public class BicepFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_bicep, container, false);
+        View view = inflater.inflate(R.layout.fragment_bicep_layout, container, false);
 
-        ViewPager2 viewPager2 = view.findViewById(R.id.bicepViewPager);
+        if(mParam1 != null) {
+            TextView titleView = view.findViewById(R.id.bicep_title);
+            titleView.setText(mParam1);
+        }
 
-        viewPager2.setAdapter(new BicepViewPagerAdapter(getActivity()));
+        if(mParam2 != null) {
+            ImageView imageView = view.findViewById(R.id.bicep_image);
+            imageView.setImageResource(Integer.parseInt(mParam2));
+        }
 
         return view;
     }

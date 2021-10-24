@@ -66,13 +66,8 @@ public class PlansLayoutFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_plans_layout, container, false);
 
         if(mParam1 != null) {
-            TextView titleView = view.findViewById(R.id.bicep_title);
+            TextView titleView = view.findViewById(R.id.plans_title);
             titleView.setText(mParam1);
-        }
-
-        if(mParam2 != null) {
-            ImageView imageView = view.findViewById(R.id.bicep_image);
-            imageView.setImageResource(Integer.parseInt(mParam2));
         }
 
         return view;

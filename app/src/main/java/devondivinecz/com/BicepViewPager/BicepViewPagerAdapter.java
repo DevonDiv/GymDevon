@@ -1,12 +1,14 @@
-package devondivinecz.com.PlansViewPager;
+package devondivinecz.com.BicepViewPager;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class PlansViewPagerAdapter extends FragmentStateAdapter {
-    public PlansViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
+import devondivinecz.com.PlansViewPager.PlansLayoutFragment;
+
+public class BicepViewPagerAdapter extends FragmentStateAdapter {
+    public BicepViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
 

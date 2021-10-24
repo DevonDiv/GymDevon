@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PlansViewPager.PlansLayoutFragment">
-
+    tools:context=".BicepViewPager.BicepLayoutFragment">
 
     <TextView
-        android:id="@+id/plans_title"
+        android:id="@+id/bicep_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/bicep_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="" />
+
 
 
 </LinearLayout>
