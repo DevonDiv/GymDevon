@@ -3,6 +3,7 @@ package devondivinecz.com.LegViewPager;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,6 +62,12 @@ public class LegFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leg, container, false);
+        View view = inflater.inflate(R.layout.fragment_leg, container, false);
+
+        ViewPager2 viewPager2 = view.findViewById(R.id.legViewPager);
+
+        viewPager2.setAdapter(new LegViewPagerAdapter(getActivity()));
+
+        return view;
     }
 }

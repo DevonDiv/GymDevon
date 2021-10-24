@@ -59,4 +59,9 @@
         android:name="devondivinecz.com.ReportBugFragment"
         android:label="Report a Bug"
         tools:layout="@layout/fragment_report_bug" />
+    <fragment
+        android:id="@+id/rest_nav"
+        android:name="devondivinecz.com.RestFragment"
+        android:label="Rest Timer"
+        tools:layout="@layout/fragment_rest" />
 </navigation>

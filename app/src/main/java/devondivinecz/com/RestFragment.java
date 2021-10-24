@@ -1,23 +1,19 @@
-package devondivinecz.com.ShoulderViewPager;
+package devondivinecz.com;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import devondivinecz.com.R;
-
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ShoulderFragment#newInstance} factory method to
+ * Use the {@link RestFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ShoulderFragment extends Fragment {
+public class RestFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +24,7 @@ public class ShoulderFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ShoulderFragment() {
+    public RestFragment() {
         // Required empty public constructor
     }
 
@@ -38,11 +34,11 @@ public class ShoulderFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ShoulderFragment.
+     * @return A new instance of fragment RestFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ShoulderFragment newInstance(String param1, String param2) {
-        ShoulderFragment fragment = new ShoulderFragment();
+    public static RestFragment newInstance(String param1, String param2) {
+        RestFragment fragment = new RestFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,12 +59,6 @@ public class ShoulderFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_shoulder, container, false);
-
-        ViewPager2 viewPager2 = view.findViewById(R.id.shoulderViewPager);
-
-        viewPager2.setAdapter(new ShoulderViewPagerAdapter(getActivity()));
-
-        return view;
+        return inflater.inflate(R.layout.fragment_rest, container, false);
     }
 }
