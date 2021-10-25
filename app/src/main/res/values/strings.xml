@@ -26,4 +26,8 @@
     <string name="gym_devon">Gym Devon</string>
     <string name="report_title">Report a Bug</string>
     <string name="report_button">Report a Bug to the Developers</string>
+    <string name="info_title">More Information</string>
+    <string name="location_button">Where we are located</string>
+    <string name="website_button">Our Website</string>
+    <string name="call_button">Call us now!</string>
 </resources>

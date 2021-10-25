@@ -1,5 +1,7 @@
 package devondivinecz.com;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +62,39 @@ public class InformationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_information, container, false);
+        View view = inflater.inflate(R.layout.fragment_information, container, false);
+
+        Button locationButton = view.findViewById(R.id.location_button);
+
+        locationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri location = Uri.parse("geo:42.2818368,-82.8766737?z=20");
+                Intent intent = new Intent(Intent.ACTION_VIEW, location);
+                startActivity(intent);
+            }
+        });
+
+        Button websiteButton = view.findViewById(R.id.website_button);
+
+        websiteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com")); //Add Link - Create Bullshit site using scweb server?
+                startActivity(intent);
+            }
+        });
+
+        Button phoneButton = view.findViewById(R.id.phone_button);
+
+        phoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:2263457080"));
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 }
