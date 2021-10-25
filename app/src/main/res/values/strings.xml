@@ -24,4 +24,6 @@
     <string name="menu_information">More Information</string>
     <string name="menu_bug">Report a Bug</string>
     <string name="gym_devon">Gym Devon</string>
+    <string name="report_title">Report a Bug</string>
+    <string name="report_button">Report a Bug to the Developers</string>
 </resources>

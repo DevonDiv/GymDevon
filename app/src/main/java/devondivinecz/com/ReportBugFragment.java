@@ -1,5 +1,7 @@
 package devondivinecz.com;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +62,21 @@ public class ReportBugFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_report_bug, container, false);
+        View view = inflater.inflate(R.layout.fragment_report_bug, container, false);
+
+        Button reportButton = view.findViewById(R.id.report_button);
+
+        reportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String[] personalEmailAddress = {"w0723299@myscc.ca"};
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"));
+                intent.putExtra(Intent.EXTRA_EMAIL, personalEmailAddress);
+                intent.putExtra(Intent.EXTRA_TEXT, "I would like to report an issue with the following:\n");
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 }
