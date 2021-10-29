@@ -1,13 +1,16 @@
-package devondivinecz.com.PlansViewPager;
+package devondivinecz.com.PlansRecyclerView;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.viewpager2.widget.ViewPager2;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 import devondivinecz.com.R;
 
@@ -64,9 +67,22 @@ public class PlansFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_plans, container, false);
 
-        ViewPager2 viewPager2 = view.findViewById(R.id.plansViewPager);
+        ArrayList<Workout> workouts = new ArrayList<>();
+        workouts.add(new Workout("Arm Workout", "Workout One\tReps:10\tSets:3",
+                "Workout Two\tReps:10\tSets:3",
+                "Workout Three\tReps:10\tSets:3",
+                "Workout Four\tReps:10\tSets:3",
+                "Workout Five\tReps:10\tSets:3",
+                "Workout Six\tReps:10\tSets:3",
+                "Workout Seven\tReps:10\tSets:3",
+                "Workout Eight\tReps:10\tSets:3",
+                "Workout Nine\tReps:10\tSets:3",
+                "Workout Ten\tReps:10\tSets:3"));
 
-        viewPager2.setAdapter(new PlansViewPagerAdapter(getActivity()));
+        RecyclerView recyclerView = view.findViewById(R.id.plansRecyclerView);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setAdapter(new WorkoutRecyclerViewAdapter(workouts));
 
         return view;
     }

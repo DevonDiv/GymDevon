@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PlansViewPager.PlansFragment">
+    tools:context=".PlansRecyclerView.PlansFragment">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/plansViewPager"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/plansRecyclerView"
         />
 
 

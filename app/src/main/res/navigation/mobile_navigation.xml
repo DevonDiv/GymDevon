@@ -26,7 +26,7 @@
         tools:layout="@layout/fragment_leg" />
     <fragment
         android:id="@+id/plans_nav"
-        android:name="devondivinecz.com.PlansViewPager.PlansFragment"
+        android:name="devondivinecz.com.PlansRecyclerView.PlansFragment"
         android:label="Workout Plans"
         tools:layout="@layout/fragment_plans" />
     <fragment
