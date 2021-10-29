@@ -17,11 +17,11 @@ public class TricepViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         position = position % 5;
         switch(position) {
-            case 0: return TricepLayoutFragment.newInstance(null, null);
-            case 1: return TricepLayoutFragment.newInstance(null, null);
-            case 2: return TricepLayoutFragment.newInstance(null, null);
-            case 3: return TricepLayoutFragment.newInstance(null, null);
-            case 4: return TricepLayoutFragment.newInstance(null, null);
+            case 0: return TricepLayoutFragment.newInstance("Close-Grip Bench Press", null);
+            case 1: return TricepLayoutFragment.newInstance("Cable Rope Triceps Pushdown", null);
+            case 2: return TricepLayoutFragment.newInstance("Lying Triceps Extension", null);
+            case 3: return TricepLayoutFragment.newInstance("Tricep Dips", null);
+            case 4: return TricepLayoutFragment.newInstance("One Arm Overhead Extension", null);
             default: return TricepLayoutFragment.newInstance("Fragment Not Found", null);
         }
     }

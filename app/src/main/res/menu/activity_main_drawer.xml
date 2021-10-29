@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_baseline_accessibility_24"
             android:title="@string/menu_tricep" />
         <item
+            android:id="@+id/chest_nav"
+            android:icon="@drawable/ic_baseline_accessibility_24"
+            android:title="@string/chest_menu" />
+        <item
             android:id="@+id/shoulder_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
             android:title="@string/menu_shoulder" />
@@ -24,6 +28,10 @@
             android:id="@+id/traps_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"
             android:title="@string/menu_traps" />
+        <item
+            android:id="@+id/back_nav"
+            android:icon="@drawable/ic_baseline_accessibility_24"
+            android:title="@string/back_menu" />
         <item
             android:id="@+id/forearm_nav"
             android:icon="@drawable/ic_baseline_accessibility_24"

@@ -30,4 +30,6 @@
     <string name="location_button">Where we are located</string>
     <string name="website_button">Our Website</string>
     <string name="call_button">Call us now!</string>
+    <string name="chest_menu">Chest Workouts</string>
+    <string name="back_menu">Back Workouts</string>
 </resources>

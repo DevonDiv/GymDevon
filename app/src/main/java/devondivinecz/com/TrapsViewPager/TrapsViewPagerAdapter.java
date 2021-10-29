@@ -17,11 +17,11 @@ public class TrapsViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         position = position % 5;
         switch(position) {
-            case 0: return TrapsLayoutFragment.newInstance(null, null);
-            case 1: return TrapsLayoutFragment.newInstance(null, null);
-            case 2: return TrapsLayoutFragment.newInstance(null, null);
-            case 3: return TrapsLayoutFragment.newInstance(null, null);
-            case 4: return TrapsLayoutFragment.newInstance(null, null);
+            case 0: return TrapsLayoutFragment.newInstance("Dumbbell Shrugs", null);
+            case 1: return TrapsLayoutFragment.newInstance("Single Arm Shrugs", null);
+            case 2: return TrapsLayoutFragment.newInstance("Lower Trap Raise", null);
+            case 3: return TrapsLayoutFragment.newInstance("Dumbbell Snatch", null);
+            case 4: return TrapsLayoutFragment.newInstance("Incline Dumbbell Shrug", null);
             default: return TrapsLayoutFragment.newInstance("Fragment Not Found", null);
         }
     }

@@ -15,11 +15,11 @@ public class BicepViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         position = position % 5;
         switch(position) {
-            case 0: return BicepLayoutFragment.newInstance(null, null);
-            case 1: return BicepLayoutFragment.newInstance(null, null);
-            case 2: return BicepLayoutFragment.newInstance(null, null);
-            case 3: return BicepLayoutFragment.newInstance(null, null);
-            case 4: return BicepLayoutFragment.newInstance(null, null);
+            case 0: return BicepLayoutFragment.newInstance("Dumbbell Curls", null);
+            case 1: return BicepLayoutFragment.newInstance("Weighters Curls", null);
+            case 2: return BicepLayoutFragment.newInstance("Concentration Curls", null);
+            case 3: return BicepLayoutFragment.newInstance("Incline Dumbbell Curls", null);
+            case 4: return BicepLayoutFragment.newInstance("Seated Hammer Curl", null);
             default: return BicepLayoutFragment.newInstance("Fragment Not Found", null);
         }
     }

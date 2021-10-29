@@ -68,7 +68,37 @@ public class PlansFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_plans, container, false);
 
         ArrayList<Workout> workouts = new ArrayList<>();
-        workouts.add(new Workout("Arm Workout", "Workout One\tReps:10\tSets:3",
+        workouts.add(new Workout("Arm Workout Plan", "Workout One\tReps:10\tSets:3",
+                "Workout Two\tReps:10\tSets:3",
+                "Workout Three\tReps:10\tSets:3",
+                "Workout Four\tReps:10\tSets:3",
+                "Workout Five\tReps:10\tSets:3",
+                "Workout Six\tReps:10\tSets:3",
+                "Workout Seven\tReps:10\tSets:3",
+                "Workout Eight\tReps:10\tSets:3",
+                "Workout Nine\tReps:10\tSets:3",
+                "Workout Ten\tReps:10\tSets:3"));
+        workouts.add(new Workout("Trapezius Workout Plan", "Workout One\tReps:10\tSets:3",
+                "Workout Two\tReps:10\tSets:3",
+                "Workout Three\tReps:10\tSets:3",
+                "Workout Four\tReps:10\tSets:3",
+                "Workout Five\tReps:10\tSets:3",
+                "Workout Six\tReps:10\tSets:3",
+                "Workout Seven\tReps:10\tSets:3",
+                "Workout Eight\tReps:10\tSets:3",
+                "Workout Nine\tReps:10\tSets:3",
+                "Workout Ten\tReps:10\tSets:3"));
+        workouts.add(new Workout("Leg Workout Plan", "Workout One\tReps:10\tSets:3",
+                "Workout Two\tReps:10\tSets:3",
+                "Workout Three\tReps:10\tSets:3",
+                "Workout Four\tReps:10\tSets:3",
+                "Workout Five\tReps:10\tSets:3",
+                "Workout Six\tReps:10\tSets:3",
+                "Workout Seven\tReps:10\tSets:3",
+                "Workout Eight\tReps:10\tSets:3",
+                "Workout Nine\tReps:10\tSets:3",
+                "Workout Ten\tReps:10\tSets:3"));
+        workouts.add(new Workout("Cardio Workout Plan", "Workout One\tReps:10\tSets:3",
                 "Workout Two\tReps:10\tSets:3",
                 "Workout Three\tReps:10\tSets:3",
                 "Workout Four\tReps:10\tSets:3",
