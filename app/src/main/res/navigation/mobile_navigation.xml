@@ -64,4 +64,14 @@
         android:name="devondivinecz.com.RestFragment"
         android:label="Rest Timer"
         tools:layout="@layout/fragment_rest" />
+    <fragment
+        android:id="@+id/chest_nav"
+        android:name="devondivinecz.com.ChestViewPager.ChestFragment"
+        android:label="Chest Workouts"
+        tools:layout="@layout/fragment_chest" />
+    <fragment
+        android:id="@+id/back_nav"
+        android:name="devondivinecz.com.BackViewPager.BackFragment"
+        android:label="Back Workouts"
+        tools:layout="@layout/fragment_back" />
 </navigation>
