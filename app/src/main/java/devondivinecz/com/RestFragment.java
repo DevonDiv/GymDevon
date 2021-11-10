@@ -1,12 +1,15 @@
 package devondivinecz.com;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.provider.AlarmClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +62,38 @@ public class RestFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rest, container, false);
+        View view = inflater.inflate(R.layout.fragment_rest, container, false);
+
+        Button thirtySecondButton = view.findViewById(R.id.thirtySecondButton);
+
+        thirtySecondButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER).putExtra(AlarmClock.EXTRA_LENGTH, 30);
+                startActivity(intent);
+            }
+        });
+
+        Button fortyFiveSecondButton = view.findViewById(R.id.fortyFiveSecondButton);
+
+        fortyFiveSecondButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER).putExtra(AlarmClock.EXTRA_LENGTH, 30);
+                startActivity(intent);
+            }
+        });
+
+        Button minuteButton = view.findViewById(R.id.minuteButton);
+
+        minuteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER).putExtra(AlarmClock.EXTRA_LENGTH, 30);
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 }
