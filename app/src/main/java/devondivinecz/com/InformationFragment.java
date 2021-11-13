@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -92,6 +93,15 @@ public class InformationFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:2263457080"));
                 startActivity(intent);
+            }
+        });
+
+        Button homeGymButton = view.findViewById(R.id.start_home_gym_button);
+
+        homeGymButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_info_to_home_gym);
             }
         });
 

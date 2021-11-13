@@ -45,10 +45,6 @@
             android:icon="@drawable/ic_baseline_list_24"
             android:title="@string/menu_plans" />
         <item
-            android:id="@+id/create_workout_nav"
-            android:icon="@drawable/ic_baseline_create_24"
-            android:title="@string/menu_create" />
-        <item
             android:id="@+id/rest_nav"
             android:icon="@drawable/ic_baseline_timer_24"
             android:title="@string/menu_rest" />

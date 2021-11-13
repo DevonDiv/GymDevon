@@ -45,15 +45,14 @@
         android:label="Tricep Workouts"
         tools:layout="@layout/fragment_tricep" />
     <fragment
-        android:id="@+id/create_workout_nav"
-        android:name="devondivinecz.com.CreatePlansFragment"
-        android:label="Create Workout Plan"
-        tools:layout="@layout/fragment_create_plans" />
-    <fragment
         android:id="@+id/info_nav"
         android:name="devondivinecz.com.InformationFragment"
         android:label="More Information"
         tools:layout="@layout/fragment_information" />
+    <action
+        android:id="@+id/action_info_to_home_gym"
+        app:destination="@+id/home_gym_nav"
+        />
     <fragment
         android:id="@+id/report_nav"
         android:name="devondivinecz.com.ReportBugFragment"
@@ -74,4 +73,9 @@
         android:name="devondivinecz.com.BackViewPager.BackFragment"
         android:label="Back Workouts"
         tools:layout="@layout/fragment_back" />
+    <fragment
+        android:id="@+id/home_gym_nav"
+        android:name="devondivinecz.com.HomeGymFragment"
+        android:label="Start a Home Gym"
+        tools:layout="@layout/fragment_home_gym" />
 </navigation>
