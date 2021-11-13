@@ -17,11 +17,11 @@ public class ChestViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         position = position % 5;
         switch(position) {
-            case 0: return ChestLayoutFragment.newInstance(null, null, null);
-            case 1: return ChestLayoutFragment.newInstance(null, null, null);
-            case 2: return ChestLayoutFragment.newInstance(null, null, null);
-            case 3: return ChestLayoutFragment.newInstance(null, null, null);
-            case 4: return ChestLayoutFragment.newInstance(null, null, null);
+            case 0: return ChestLayoutFragment.newInstance("Bench Press", null, null);
+            case 1: return ChestLayoutFragment.newInstance("Dips", null, null);
+            case 2: return ChestLayoutFragment.newInstance("Decline Chest Pull Overs", null, null);
+            case 3: return ChestLayoutFragment.newInstance("Dumbbell Press", null, null);
+            case 4: return ChestLayoutFragment.newInstance("Pushups", null, null);
             default: return ChestLayoutFragment.newInstance(null, null, null);
         }
     }
