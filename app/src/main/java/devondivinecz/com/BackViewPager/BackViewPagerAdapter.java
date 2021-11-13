@@ -17,12 +17,12 @@ public class BackViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         position = position % 5;
         switch(position) {
-            case 0: return BackLayoutFragment.newInstance(null, null);
-            case 1: return BackLayoutFragment.newInstance(null, null);
-            case 2: return BackLayoutFragment.newInstance(null, null);
-            case 3: return BackLayoutFragment.newInstance(null, null);
-            case 4: return BackLayoutFragment.newInstance(null, null);
-            default: return BackLayoutFragment.newInstance(null, null);
+            case 0: return BackLayoutFragment.newInstance(null, null, null);
+            case 1: return BackLayoutFragment.newInstance(null, null, null);
+            case 2: return BackLayoutFragment.newInstance(null, null, null);
+            case 3: return BackLayoutFragment.newInstance(null, null, null);
+            case 4: return BackLayoutFragment.newInstance(null, null, null);
+            default: return BackLayoutFragment.newInstance(null, null, null);
         }
     }
 

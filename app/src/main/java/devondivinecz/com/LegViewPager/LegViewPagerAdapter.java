@@ -15,13 +15,12 @@ public class LegViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         position = position % 5;
         switch(position) {
-            case 0: return LegLayoutFragment.newInstance("Squats", null);
-            case 1: return LegLayoutFragment.newInstance("Calf Extension", null);
-            case 2: return LegLayoutFragment.newInstance("Leg Press", null);
-            case 3: return LegLayoutFragment.newInstance("Walking Weighted Lunges", null);
-            /** TODO find case 4 proper name */
-            case 4: return LegLayoutFragment.newInstance("Bulgarian Squat", null);
-            default: return LegLayoutFragment.newInstance("Fragment Not Found", null);
+            case 0: return LegLayoutFragment.newInstance("Squats", null, null);
+            case 1: return LegLayoutFragment.newInstance("Calf Extension", null, null);
+            case 2: return LegLayoutFragment.newInstance("Leg Press", null, null);
+            case 3: return LegLayoutFragment.newInstance("Walking Weighted Lunges", null, null);
+            case 4: return LegLayoutFragment.newInstance("Bulgarian Squat", null, null);
+            default: return LegLayoutFragment.newInstance("Fragment Not Found", null, null);
         }
     }
 

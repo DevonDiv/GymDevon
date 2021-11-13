@@ -15,12 +15,12 @@ public class ForearmViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         position = position % 5;
         switch(position) {
-            case 0: return ForearmLayoutFragment.newInstance("Dumbbell Wrist Flexion", null);
-            case 1: return ForearmLayoutFragment.newInstance("Dumbbell Wrist Extension", null);
-            case 2: return ForearmLayoutFragment.newInstance("Reverse Curl", null);
-            case 3: return ForearmLayoutFragment.newInstance("Farmers Walk", null);
-            case 4: return ForearmLayoutFragment.newInstance("Preacher Curl", null);
-            default: return ForearmLayoutFragment.newInstance("Fragment Not Found", null);
+            case 0: return ForearmLayoutFragment.newInstance("Dumbbell Wrist Flexion", null, null);
+            case 1: return ForearmLayoutFragment.newInstance("Dumbbell Wrist Extension", null, null);
+            case 2: return ForearmLayoutFragment.newInstance("Reverse Curl", null, null);
+            case 3: return ForearmLayoutFragment.newInstance("Farmers Walk", null, null);
+            case 4: return ForearmLayoutFragment.newInstance("Preacher Curl", null, null);
+            default: return ForearmLayoutFragment.newInstance("Fragment Not Found", null, null);
         }
     }
 
