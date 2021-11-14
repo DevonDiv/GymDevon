@@ -60,7 +60,10 @@
             android:id="@+id/report_nav"
             android:icon="@drawable/ic_baseline_bug_report_24"
             android:title="@string/menu_bug" />
-
+        <item
+            android:id="@+id/credit_nav"
+            android:icon="@drawable/ic_baseline_diamond_24"
+            android:title="@string/credit_nav" />
 
     </group>
 </menu>
