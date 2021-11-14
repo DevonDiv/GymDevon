@@ -75,7 +75,7 @@
         tools:layout="@layout/fragment_back" />
     <fragment
         android:id="@+id/home_gym_nav"
-        android:name="devondivinecz.com.HomeGymFragment"
+        android:name="devondivinecz.com.HomeGymListView.HomeGymFragment"
         android:label="Start a Home Gym"
         tools:layout="@layout/fragment_home_gym" />
 </navigation>
