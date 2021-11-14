@@ -1,4 +1,4 @@
-package devondivinecz.com.HomeGymListView;
+package devondivinecz.com;
 
 import android.os.Bundle;
 
@@ -7,20 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-
-import devondivinecz.com.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link HomeGymFragment#newInstance} factory method to
+ * Use the {@link SettingsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeGymFragment extends Fragment {
-
-    ListView equipmentList;
+public class SettingsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +24,7 @@ public class HomeGymFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public HomeGymFragment() {
+    public SettingsFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +34,11 @@ public class HomeGymFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeGymFragment.
+     * @return A new instance of fragment SettingsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static HomeGymFragment newInstance(String param1, String param2) {
-        HomeGymFragment fragment = new HomeGymFragment();
+    public static SettingsFragment newInstance(String param1, String param2) {
+        SettingsFragment fragment = new SettingsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,21 +59,6 @@ public class HomeGymFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home_gym, container, false);
-
-        equipmentList = view.findViewById(R.id.equipment_list);
-        ArrayList<HomeGymList> homeGymList = new ArrayList<>();
-        homeGymList.add(new HomeGymList("Adjustable Dumbbells"));
-        homeGymList.add(new HomeGymList("Adjustable Bench"));
-        homeGymList.add(new HomeGymList("Squat Rack"));
-        homeGymList.add(new HomeGymList("Barbell"));
-        homeGymList.add(new HomeGymList("Curl Bar"));
-        homeGymList.add(new HomeGymList("Weighted Plates"));
-        homeGymList.add(new HomeGymList("Dip Bar"));
-        homeGymList.add(new HomeGymList("Ab Roller"));
-
-        equipmentList.setAdapter(new HomeGymListViewAdapter(getContext(), homeGymList));
-
-        return view;
+        return inflater.inflate(R.layout.fragment_settings, container, false);
     }
 }

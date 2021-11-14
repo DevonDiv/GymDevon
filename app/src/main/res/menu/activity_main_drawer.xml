@@ -49,6 +49,10 @@
             android:icon="@drawable/ic_baseline_timer_24"
             android:title="@string/menu_rest" />
         <item
+            android:id="@+id/settings_nav"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings_nav"/>
+        <item
             android:id="@+id/info_nav"
             android:icon="@drawable/ic_baseline_info_24"
             android:title="@string/menu_information" />

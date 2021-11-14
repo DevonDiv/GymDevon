@@ -34,4 +34,5 @@
     <string name="back_menu">Back Workouts</string>
     <string name="start_a_home_gym_button">Start a home gym!</string>
     <string name="home_gym_title">Equipment You Need to Start a Home Gym</string>
+    <string name="settings_nav">Settings</string>
 </resources>
