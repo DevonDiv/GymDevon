@@ -26,7 +26,10 @@ public class ChestViewPagerAdapter extends FragmentStateAdapter {
                 return ChestLayoutFragment.newInstance("Dips", null, "1. Grab the outside horizontal handles\n" +
                         "2. Push yourself up and down vertically to compelete the rep");
             case 2:
-                return ChestLayoutFragment.newInstance("Decline Chest Pull Overs", null, null);
+                return ChestLayoutFragment.newInstance("Decline Chest Pull Overs", null, "1. Grab a dumbbell\n" +
+                        "2. Lay down on the declined bench\n" +
+                        "3. Hold the dumbbell on both ends with your arms extended behind your head\n" +
+                        "4. Pull up towards your chest and back down to complete a rep");
             case 3:
                 return ChestLayoutFragment.newInstance("Dumbbell Press", null, "1. Start by laying flat on the bench\n" +
                         "2. Lift the dumbbells up and back down towards your chest to complete a rep");
