@@ -78,6 +78,8 @@ public class HomeGymFragment extends Fragment {
         homeGymList.add(new HomeGymList("Weighted Plates"));
         homeGymList.add(new HomeGymList("Dip Bar"));
         homeGymList.add(new HomeGymList("Ab Roller"));
+        homeGymList.add(new HomeGymList("Treadmill"));
+        homeGymList.add(new HomeGymList("Elliptical"));
 
         equipmentList.setAdapter(new HomeGymListViewAdapter(getContext(), homeGymList));
 

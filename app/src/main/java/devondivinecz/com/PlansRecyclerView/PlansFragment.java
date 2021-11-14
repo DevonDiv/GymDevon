@@ -67,47 +67,52 @@ public class PlansFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_plans, container, false);
 
+
+
         ArrayList<Workout> workouts = new ArrayList<>();
-        workouts.add(new Workout("Arm Workout Plan", "Workout One\tReps:10\tSets:3",
-                "Workout Two\tReps:10\tSets:3",
-                "Workout Three\tReps:10\tSets:3",
-                "Workout Four\tReps:10\tSets:3",
-                "Workout Five\tReps:10\tSets:3",
-                "Workout Six\tReps:10\tSets:3",
-                "Workout Seven\tReps:10\tSets:3",
-                "Workout Eight\tReps:10\tSets:3",
-                "Workout Nine\tReps:10\tSets:3",
-                "Workout Ten\tReps:10\tSets:3"));
-        workouts.add(new Workout("Trapezius Workout Plan", "Workout One\tReps:10\tSets:3",
-                "Workout Two\tReps:10\tSets:3",
-                "Workout Three\tReps:10\tSets:3",
-                "Workout Four\tReps:10\tSets:3",
-                "Workout Five\tReps:10\tSets:3",
-                "Workout Six\tReps:10\tSets:3",
-                "Workout Seven\tReps:10\tSets:3",
-                "Workout Eight\tReps:10\tSets:3",
-                "Workout Nine\tReps:10\tSets:3",
-                "Workout Ten\tReps:10\tSets:3"));
-        workouts.add(new Workout("Leg Workout Plan", "Workout One\tReps:10\tSets:3",
-                "Workout Two\tReps:10\tSets:3",
-                "Workout Three\tReps:10\tSets:3",
-                "Workout Four\tReps:10\tSets:3",
-                "Workout Five\tReps:10\tSets:3",
-                "Workout Six\tReps:10\tSets:3",
-                "Workout Seven\tReps:10\tSets:3",
-                "Workout Eight\tReps:10\tSets:3",
-                "Workout Nine\tReps:10\tSets:3",
-                "Workout Ten\tReps:10\tSets:3"));
-        workouts.add(new Workout("Cardio Workout Plan", "Workout One\tReps:10\tSets:3",
-                "Workout Two\tReps:10\tSets:3",
-                "Workout Three\tReps:10\tSets:3",
-                "Workout Four\tReps:10\tSets:3",
-                "Workout Five\tReps:10\tSets:3",
-                "Workout Six\tReps:10\tSets:3",
-                "Workout Seven\tReps:10\tSets:3",
-                "Workout Eight\tReps:10\tSets:3",
-                "Workout Nine\tReps:10\tSets:3",
-                "Workout Ten\tReps:10\tSets:3"));
+        workouts.add(new Workout("Arm Workout Plan", "Dumbbell Curls\tReps:10\tSets:3",
+                "Waiters Curls\tReps:10\tSets:3",
+                "Concentration Curls\tReps:10\tSets:4",
+                "Incline Dumbbell Curls\tReps:10\tSets:3",
+                "Seated Hammer Curls\tReps:10\tSets:3",
+                "Close-Grip Bench Press\tReps:10\tSets:3",
+                "Cable Rope Triceps Pushdown\tReps:10\tSets:3",
+                "Lying Triceps Extension\tReps:10\tSets:3",
+                "Tricep Dips\tReps:10\tSets:3",
+                "One Arm Overhead Extension\tReps:10\tSets:3"));
+
+        workouts.add(new Workout("Trapezius Workout Plan", "Dumbbell Lateral Raise\tReps:10\tSets:3",
+                "Incline Lateral Raise\tReps:10\tSets:3",
+                "Rear Kickback\tReps:10\tSets:3",
+                "Rainbow Raise\tReps:10\tSets:3",
+                "Kneeling Dumbbell Press\tReps:10\tSets:3",
+                "Dumbbell Shrugs\tReps:10\tSets:3",
+                "Single Arm Shrugs\tReps:10\tSets:3",
+                "Lower Trap Raise\tReps:10\tSets:3",
+                "Dumbbell Snatch\tReps:10\tSets:3",
+                "Incline Dumbbell Shrug\tReps:10\tSets:3"));
+
+        workouts.add(new Workout("Leg Workout Plan", "Squats\tReps:10\tSets:3",
+                "Calf Extension\tReps:10\tSets:3",
+                "Leg Press\tReps:10\tSets:3",
+                "Walking Weighted Lunges\tReps:10\tSets:3",
+                "Bulgarian Squat\tReps:10\tSets:3",
+                "Leg Curls\tReps:10\tSets:3",
+                "Leg Extension\tReps:10\tSets:3",
+                null,
+                null,
+                null));
+
+        workouts.add(new Workout("Cardio Workout Plan", "Stair Climber 15 Minutes",
+                "Stationary Bike 15 Minutes",
+                "Treadmill Jog 5 Minutes",
+                "Treadmill Sprint 1 Minute",
+                "Treadmill Jog 5 Minutes",
+                "Treadmill Sprint 1 Minute",
+                "Treadmill Jog 5 Minutes",
+                "Treadmill Sprint 1 Minute",
+                "Treadmill Cooldown Jog 2 Minutes",
+                null));
 
         RecyclerView recyclerView = view.findViewById(R.id.plansRecyclerView);
 
