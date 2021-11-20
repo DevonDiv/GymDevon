@@ -16,11 +16,17 @@ public class ShoulderViewPagerAdapter extends FragmentStateAdapter {
         position = position % 5;
         switch(position) {
             case 0:
-                return ShoulderLayoutFragment.newInstance("Dumbbell Lateral Raise", null, null);
+                return ShoulderLayoutFragment.newInstance("Dumbbell Lateral Raise", null, "1. Hold a dumbbell in each hand by your waist\n" +
+                        "2. Raise the dumbbell up to your shoulders into a T shape\n" +
+                        "3. Lower the dumbbells back towards your waist to complete a rep");
             case 1:
-                return ShoulderLayoutFragment.newInstance("Incline Lateral Raise", null, null);
+                return ShoulderLayoutFragment.newInstance("Incline Lateral Raise", null, "1. Sitting down and leaning back at a 45 degree angle hold a dumbbell in each hand by your waist\n" +
+                        "2. Raise the dumbbell up to your shoulders into a T shape\n" +
+                        "3. Lower the dumbbells back towards your waist to complete a rep");
             case 2:
-                return ShoulderLayoutFragment.newInstance("Rear Kickback", null, null);
+                return ShoulderLayoutFragment.newInstance("Rear Kickback", null, "1. In a squat position hold the dumbbells on each side below your waist\n" +
+                        "2. Raise the dumbbells up backwards as far as you can\n" +
+                        "3. Lower the dumbbells back down to complete a rep");
             case 3:
                 return ShoulderLayoutFragment.newInstance("Rainbow Raise", null, "1. Rest the side of your body on the bench at a 45 degree angle\n" +
                         "2. With the dumbbell starting behind your back raise it up and towards the front of your body in a semi circle motion");
