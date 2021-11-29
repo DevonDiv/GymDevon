@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Indigo_Dye"
-    tools:context=".CreditFragment">
+    android:orientation="vertical"
+    tools:context=".CreditListView.CreditFragment">
+
+    <TextView
+        android:id="@+id/creditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/credits_title"
+        android:textSize="@dimen/title_text"
+        android:textColor="@color/Alice_Blue"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/credit_list"/>
 
 
-</FrameLayout>
+</LinearLayout>

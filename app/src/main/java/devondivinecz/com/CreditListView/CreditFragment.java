@@ -1,4 +1,4 @@
-package devondivinecz.com;
+package devondivinecz.com.CreditListView;
 
 import android.os.Bundle;
 
@@ -7,6 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+import devondivinecz.com.HomeGymListView.HomeGymList;
+import devondivinecz.com.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +20,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class CreditFragment extends Fragment {
+
+    ListView creditsList;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +66,17 @@ public class CreditFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_credit, container, false);
+        View view = inflater.inflate(R.layout.fragment_credit, container, false);
+
+        creditsList = view.findViewById(R.id.credit_list);
+        ArrayList<CreditList> creditList = new ArrayList<>();
+        creditList.add(new CreditList("Connor Blackwell: Workouts & Images"));
+        creditList.add(new CreditList("Devon Divinecz: Workouts"));
+        creditList.add(new CreditList("https://developer.android.com/studio"));
+
+        creditsList.setAdapter(new CreditListViewAdapter(getContext(), creditList));
+
+
+        return view;
     }
 }

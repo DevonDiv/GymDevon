@@ -16,11 +16,11 @@
         <entry key="app/src/main/res/layout/fragment_bicep_layout.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_chest.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_chest_layout.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/fragment_credit.xml" value="0.2210144927536232" />
+        <entry key="app/src/main/res/layout/fragment_credit.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_forearm.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_forearm_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_home_gym.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_home_gym.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_information.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_leg.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_leg_layout.xml" value="0.38958333333333334" />

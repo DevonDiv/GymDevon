@@ -80,7 +80,7 @@
         tools:layout="@layout/fragment_home_gym" />
     <fragment
         android:id="@+id/credit_nav"
-        android:name="devondivinecz.com.CreditFragment"
+        android:name="devondivinecz.com.CreditListView.CreditFragment"
         android:label="Credit"
         tools:layout="@layout/fragment_credit" />
     <fragment

@@ -1,4 +1,4 @@
-package devondivinecz.com.HomeGymListView;
+package devondivinecz.com.CreditListView;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,11 +12,12 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
+import devondivinecz.com.HomeGymListView.HomeGymList;
 import devondivinecz.com.R;
 
-public class HomeGymListViewAdapter extends ArrayAdapter<HomeGymList> {
+public class CreditListViewAdapter extends ArrayAdapter<CreditList> {
 
-    public HomeGymListViewAdapter(@NonNull Context context, ArrayList<HomeGymList> items) {
+    public CreditListViewAdapter(@NonNull Context context, ArrayList<CreditList> items) {
         super(context, 0, items);
     }
 
@@ -26,8 +27,8 @@ public class HomeGymListViewAdapter extends ArrayAdapter<HomeGymList> {
         if(convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_view, parent, false);
 
-            TextView title = convertView.findViewById(R.id.list);
-            title.setText(getItem(position).getEquipment());
+            TextView name = convertView.findViewById(R.id.list);
+            name.setText(getItem(position).getName());
         }
 
         return convertView;
