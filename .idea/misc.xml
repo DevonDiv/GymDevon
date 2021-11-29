@@ -36,11 +36,12 @@
         <entry key="app/src/main/res/layout/fragment_tricep.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_tricep_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_view.xml" value="0.3967391304347826" />
-        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/plans_recycler_layout.xml" value="0.37907608695652173" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.335" />
         <entry key="app/src/main/res/menu/main.xml" value="0.24537037037037038" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/gym_devon.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.4197916666666667" />
         <entry key="app/src/main/res/xml/root_preferences.xml" value="0.25" />
       </map>
