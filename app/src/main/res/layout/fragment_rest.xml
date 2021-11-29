@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/Indigo_Dye"
     tools:context=".RestFragment">
 
     <TextView
@@ -15,6 +16,7 @@
         android:gravity="center"
         android:textAlignment="center"
         android:textSize="@dimen/title_text"
+        android:textColor="@color/Alice_Blue"
         android:text="Choose Time to Start Rest" />
 
     <LinearLayout
@@ -28,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:backgroundTint="@color/Blue_Munsell"
         android:text="30 Seconds" />
 
     <Button
@@ -35,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:backgroundTint="@color/Blue_Munsell"
         android:text="45 Seconds" />
 
         <Button
@@ -42,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/Blue_Munsell"
             android:text="60 Seconds" />
 
 

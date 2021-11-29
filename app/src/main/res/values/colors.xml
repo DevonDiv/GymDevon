@@ -10,6 +10,7 @@
     <color name="Alice_Blue">#E8EEF2</color>
     <color name="Claret">#7D1D3F</color>
     <color name="Indigo_Dye">#2B4162</color>
+    <color name="Darker_Blue">#030040</color>
     <color name="Dark_Cyan">#368F8B</color>
     <color name="Blue_Munsell">#009FB7</color>
 </resources>

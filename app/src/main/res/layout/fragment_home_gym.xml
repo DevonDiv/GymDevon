@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/Indigo_Dye"
     tools:context=".HomeGymListView.HomeGymFragment">
 
 
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/home_gym_title"
         android:textSize="@dimen/title_text"
+        android:textColor="@color/Alice_Blue"
         android:textAlignment="center"/>
 
     <ListView

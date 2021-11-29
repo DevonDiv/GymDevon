@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_weight="1"
+    android:background="@color/Indigo_Dye"
     tools:context=".InformationFragment">
 
     <TextView
@@ -15,6 +16,7 @@
         android:textAlignment="center"
         android:textSize="@dimen/title_text"
         android:padding="28dp"
+        android:textColor="@color/Alice_Blue"
         />
 
     <LinearLayout
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/location_button"
         android:layout_gravity="center"
+        android:backgroundTint="@color/Blue_Munsell"
         android:padding="10dp"/>
 
     <Button
@@ -38,6 +41,7 @@
         android:layout_height="wrap_content"
         android:text="@string/website_button"
         android:layout_gravity="center"
+        android:backgroundTint="@color/Blue_Munsell"
         android:padding="10dp"/>
 
     <Button
@@ -46,6 +50,7 @@
         android:layout_height="wrap_content"
         android:text="@string/call_button"
         android:layout_gravity="center"
+        android:backgroundTint="@color/Blue_Munsell"
         android:padding="10dp"/>
 
     <Button
@@ -54,6 +59,7 @@
         android:layout_height="wrap_content"
         android:text="@string/start_a_home_gym_button"
         android:layout_gravity="center"
+        android:backgroundTint="@color/Blue_Munsell"
         android:padding="10dp"/>
 
 </LinearLayout>

@@ -7,20 +7,21 @@
         <entry key="app/src/main/res/drawable/ic_baseline_diamond_24.xml" value="0.4197916666666667" />
         <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.4197916666666667" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.4197916666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.125" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.296195652173913" />
         <entry key="app/src/main/res/layout/fragment_back.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/fragment_back_layout.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_back_layout.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_bicep.xml" value="0.3348623853211009" />
         <entry key="app/src/main/res/layout/fragment_bicep_layout.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_chest.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_chest_layout.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_credit.xml" value="0.2210144927536232" />
         <entry key="app/src/main/res/layout/fragment_forearm.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_forearm_layout.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3967391304347826" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_home_gym.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_information.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_information.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_leg.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_leg_layout.xml" value="0.38958333333333334" />
         <entry key="app/src/main/res/layout/fragment_plans.xml" value="0.11238532110091744" />
@@ -33,14 +34,15 @@
         <entry key="app/src/main/res/layout/fragment_traps.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_traps_layout.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_tricep.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/fragment_tricep_layout.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_tricep_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_view.xml" value="0.3967391304347826" />
-        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/plans_recycler_layout.xml" value="0.37907608695652173" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.335" />
         <entry key="app/src/main/res/menu/main.xml" value="0.24537037037037038" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/gym_devon.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.4197916666666667" />
-        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.3628389457363325" />
+        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.25" />
       </map>
     </option>
   </component>
