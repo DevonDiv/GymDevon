@@ -24,7 +24,7 @@
         <entry key="app/src/main/res/layout/fragment_information.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_leg.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_leg_layout.xml" value="0.38958333333333334" />
-        <entry key="app/src/main/res/layout/fragment_plans.xml" value="0.11238532110091744" />
+        <entry key="app/src/main/res/layout/fragment_plans.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_plans_layout.xml" value="0.21" />
         <entry key="app/src/main/res/layout/fragment_report_bug.xml" value="0.23369565217391305" />
         <entry key="app/src/main/res/layout/fragment_rest.xml" value="0.18" />
