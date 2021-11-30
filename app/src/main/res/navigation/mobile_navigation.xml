@@ -30,6 +30,62 @@
         android:name="devondivinecz.com.PlansRecyclerView.PlansFragment"
         android:label="Workout Plans"
         tools:layout="@layout/fragment_plans" />
+    <action
+        android:id="@+id/action_plans_to_back"
+        app:destination="@+id/back_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_plans_to_bicep"
+        app:destination="@+id/bicep_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_plans_to_chest"
+        app:destination="@+id/chest_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_plans_to_forearm"
+        app:destination="@+id/forearm_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_plans_to_leg"
+        app:destination="@+id/legs_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_plans_to_shoulder"
+        app:destination="@+id/shoulder_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_plans_to_traps"
+        app:destination="@+id/traps_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_plans_to_tricep"
+        app:destination="@+id/tricep_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
     <fragment
         android:id="@+id/shoulder_nav"
         android:name="devondivinecz.com.ShoulderViewPager.ShoulderFragment"

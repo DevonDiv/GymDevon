@@ -15,6 +15,7 @@
         android:text="TextView"
         android:layout_weight="1.5"
         android:textColor="@color/Alice_Blue"
+        android:textSize="@dimen/title_text"
         android:gravity="center"/>
 
     <ImageView

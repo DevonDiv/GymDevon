@@ -4,12 +4,14 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -68,6 +70,69 @@ public class PlansFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_plans, container, false);
 
+        Button backButton = view.findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_back);
+            }
+        });
+
+        Button bicepButton = view.findViewById(R.id.bicepButton);
+        bicepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_bicep);
+            }
+        });
+
+        Button chestButton = view.findViewById(R.id.chestButton);
+        chestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_chest);
+            }
+        });
+
+        Button forearmButton = view.findViewById(R.id.forearmButton);
+        forearmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_forearm);
+            }
+        });
+
+        Button legButton = view.findViewById(R.id.legButton);
+        legButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_leg);
+            }
+        });
+
+        Button shoulderButton = view.findViewById(R.id.shoulderButton);
+        shoulderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_shoulder);
+            }
+        });
+
+        Button trapsButton = view.findViewById(R.id.trapsButton);
+        trapsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_traps);
+            }
+        });
+
+        Button tricepButton = view.findViewById(R.id.tricepButton);
+        tricepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_plans_to_tricep);
+            }
+        });
 
         ArrayList<Workout> workouts = new ArrayList<>();
         workouts.add(new Workout("Arm Workout Plan", "Dumbbell Curls\tReps:10\tSets:3",

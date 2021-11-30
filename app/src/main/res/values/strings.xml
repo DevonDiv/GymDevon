@@ -51,4 +51,12 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="credits_title">Credits</string>
+    <string name="back_workouts">Back Workouts</string>
+    <string name="bicep_workouts">Bicep Workouts</string>
+    <string name="chest_workouts">Chest Workouts</string>
+    <string name="forearm_workouts">Forearm Workouts</string>
+    <string name="leg_workouts">Leg Workouts</string>
+    <string name="shoulder_workouts">Shoulder Workouts</string>
+    <string name="traps_workouts">Traps Workouts</string>
+    <string name="triceps_workouts">Triceps Workouts</string>
 </resources>
