@@ -10,6 +10,20 @@
         android:label="Home"
         tools:layout="@layout/fragment_home" >
     </fragment>
+    <action
+        android:id="@+id/action_home_to_plans"
+        app:destination="@+id/plans_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
+    <action
+        android:id="@+id/action_home_to_home_gym"
+        app:destination="@+id/home_gym_nav"
+        app:enterAnim="@anim/in"
+        app:exitAnim="@anim/out"
+        app:popEnterAnim="@anim/back_in"
+        app:popExitAnim="@anim/back_out" />
     <fragment
         android:id="@+id/bicep_nav"
         android:name="devondivinecz.com.BicepViewPager.BicepFragment"

@@ -59,4 +59,12 @@
     <string name="shoulder_workouts">Shoulder Workouts</string>
     <string name="traps_workouts">Traps Workouts</string>
     <string name="triceps_workouts">Triceps Workouts</string>
+    <string name="home_title">Gym Devon</string>
+    <string name="home_content1">Gym Devon is a Gym established in August 2021.
+        We are committed to having the best staff and equipment available for our growing community.</string>
+    <string name="plans_content">Our app provides training plans.</string>
+    <string name="home_gym_content">We also provide a list of equipment needed to start a home gym.</string>
+    <string name="home_content2">The goal of our application is to keep you motivated with the proper tools to keep working out,
+        inside and out of the gym. You are able to contact our staff and request an appointment with a trainer,
+    theres also plans and tutorials to help beginners.</string>
 </resources>
