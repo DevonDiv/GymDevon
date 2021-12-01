@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GymDevon</string>
+    <string name="navigation_drawer_open" translatable="false">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close" translatable="false">Ferme le tiroir de navigation</string>
+    <string name="nav_header_desc" translatable="false">En-tête de navigation</string>
+    <string name="action_settings" translatable="false">Paramètres</string>
+    <string name="menu_bicep" translatable="false">Entraînement des biceps</string>
+    <string name="menu_tricep" translatable="false">Entraînements pour les triceps</string>
+    <string name="menu_shoulder" translatable="false">Entraînements pour les épaules</string>
+    <string name="menu_forearm" translatable="false">Entraînement des avant-bras</string>
+    <string name="menu_traps" translatable="false">Entraînements pour les pièges</string>
+    <string name="menu_legs" translatable="false">Entraînement des jambes</string>
+    <string name="menu_plans" translatable="false">Plans d\'entraînement</string>
+    <string name="menu_create" translatable="false">Créez un plan d\'entraînement</string>
+    <string name="menu_rest" translatable="false">Minuterie de repos</string>
+    <string name="menu_information" translatable="false">Plus d\'informations</string>
+    <string name="menu_bug" translatable="false">Signaler un bug</string>
+    <string name="report_title" translatable="false">Signaler un bug</string>
+    <string name="report_button" translatable="false">Signaler un bug aux développeurs</string>
+    <string name="info_title" translatable="false">Plus d\'informations</string>
+    <string name="location_button" translatable="false">Où nous sommes situés</string>
+    <string name="call_button" translatable="false">Appelez-nous maintenant !</string>
+    <string name="website_button" translatable="false">Notre site web</string>
+    <string name="chest_menu" translatable="false">Entraînements pour la poitrine</string>
+    <string name="back_menu" translatable="false">Entraînements pour le dos</string>
+    <string name="start_a_home_gym_button" translatable="false">Créez une salle de sport à domicile !</string>
+    <string name="home_gym_title" translatable="false">L\'équipement dont vous avez besoin pour commencer un gymnase à domicile</string>
+    <string name="settings_nav" translatable="false">Paramètres</string>
+    <string name="credit_nav" translatable="false">Crédit</string>
+    <string name="signature_title" translatable="false">Votre signature</string>
+    <string name="reply_title" translatable="false">Action de réponse par défaut</string>
+    <string name="sync_title" translatable="false">Synchronisation périodique des e-mails</string>
+    <string name="attachment_title" translatable="false">Télécharger les pièces jointes entrantes</string>
+    <string name="attachment_summary_on" translatable="false">Télécharger automatiquement les pièces jointes des e-mails entrants</string>
+    <string name="attachment_summary_off" translatable="false">Ne téléchargez les pièces jointes que sur demande manuelle</string>
+    <string name="credits_title" translatable="false">Crédits</string>
+    <string name="back_workouts" translatable="false">Entraînements pour le dos</string>
+    <string name="bicep_workouts" translatable="false">Entraînement des biceps</string>
+    <string name="forearm_workouts" translatable="false">Entraînement des avant-bras</string>
+    <string name="chest_workouts">Entraînements pour la poitrine</string>
+    <string name="leg_workouts" translatable="false">Entraînement des jambes</string>
+    <string name="shoulder_workouts" translatable="false">Entraînements pour les épaules</string>
+    <string name="traps_workouts" translatable="false">Entraînements pour les pièges</string>
+    <string name="triceps_workouts" translatable="false">Entraînements pour les triceps</string>
+    <string name="home_content1" translatable="false">Gym Devon est une salle de sport créée en août 2021. Nous nous engageons à avoir le meilleur personnel et les meilleurs équipements disponibles pour notre communauté croissante.</string>
+    <string name="plans_content" translatable="false">Our app provides training plans.</string>
+    <string name="home_gym_content" translatable="false">Nous fournissons également une liste des équipements nécessaires pour démarrer une salle de sport à domicile.</string>
+    <string name="home_content2" translatable="false">L\'objectif de notre application est de vous garder motivé grâce aux outils appropriés pour continuer à vous entraîner, à l\'intérieur et à l\'extérieur du gymnase. Vous pouvez contacter notre personnel et demander un rendez-vous avec un entraîneur, Il y a aussi des plans et des tutoriels pour aider les débutants.</string>
+</resources>

@@ -72,7 +72,8 @@ public class CreditFragment extends Fragment {
         ArrayList<CreditList> creditList = new ArrayList<>();
         creditList.add(new CreditList("Connor Blackwell: Workouts & Images"));
         creditList.add(new CreditList("Devon Divinecz: Workouts"));
-        creditList.add(new CreditList("https://developer.android.com/studio"));
+        creditList.add(new CreditList("Android Studio Help: https://developer.android.com/studio"));
+        creditList.add(new CreditList("Translation: https://www.deepl.com/en/translator"));
 
         creditsList.setAdapter(new CreditListViewAdapter(getContext(), creditList));
 

@@ -1,13 +1,5 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="Notifications">
-
-        <SwitchPreference
-            app:key="notifications"
-            app:title="Enable notifications"/>
-
-    </PreferenceCategory>
-
     <PreferenceCategory app:title="Messages">
 
         <EditTextPreference
@@ -19,6 +11,22 @@
             app:key="account_number"
             app:title="Account Number"
             app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Preferences">
+
+        <SwitchPreference
+            app:key="large_text"
+            app:title="Enable Large Text" />
+
+        <DropDownPreference
+            app:key="language"
+            app:title="Choose Language"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:useSimpleSummaryProvider="true"/>
+
 
     </PreferenceCategory>
 
