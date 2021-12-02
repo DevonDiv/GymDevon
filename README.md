@@ -22,8 +22,13 @@ More Information -
     Call us now uses a phone intent
     Start a home gym button using navigation finder and opens a new navigation fragment that has a listview that contains a list with equipment to start a home gym
 
-Report a Bug
+Report a Bug -
   Report a bug navigation has a button that uses an email intent
 
-Credit
+Credit -
   The credit navigation has a listView with a list of people and websites that helped create the application
+  
+Settings -
+  The settings
+  
+  Using the app outline:
