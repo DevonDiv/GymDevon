@@ -32,3 +32,7 @@ Settings -
   The settings
   
   Using the app outline:
+  
+  Home Outline
+  ![Home_Outline](https://user-images.githubusercontent.com/74803547/144417462-3b794e40-1bfb-49b5-886a-5704615c1efe.png)
+  
