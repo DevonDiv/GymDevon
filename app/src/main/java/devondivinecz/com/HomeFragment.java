@@ -67,6 +67,7 @@ public class HomeFragment extends Fragment {
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
         boolean textSize = sharedPreferences.getBoolean("large_text", false);
+        String language = sharedPreferences.getString("language", "");
 
         TextView plansTextView = view.findViewById(R.id.plans_content);
 
@@ -86,11 +87,17 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        TextView homeTitle = view.findViewById(R.id.home_title);
+        TextView homeContent = view.findViewById(R.id.home_content);
+        TextView homeContent2 = view.findViewById(R.id.home_content2);
+
         if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            homeTitle.setTextSize(40);
             plansTextView.setTextSize(18);
             homeGymTextView.setTextSize(18);
+            homeContent.setTextSize(18);
+            homeContent2.setTextSize(18);
         }
-
 
         return view;
     }
