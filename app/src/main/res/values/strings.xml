@@ -2,16 +2,9 @@
     <string name="app_name">GymDevon</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title" translatable="false">Android Studio</string>
-    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home" translatable="false">Home</string>
-    <string name="menu_gallery" translatable="false">Gallery</string>
-    <string name="menu_slideshow" translatable="false">Slideshow</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="menu_bicep">Bicep Workouts</string>
     <string name="menu_tricep">Tricep Workouts</string>
     <string name="menu_shoulder">Shoulder Workouts</string>
@@ -50,7 +43,7 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="credits_title" translatable="false">Credits</string>
+    <string name="credits_title">Credits</string>
     <string name="back_workouts">Back Workouts</string>
     <string name="bicep_workouts">Bicep Workouts</string>
     <string name="chest_workouts">Chest Workouts</string>

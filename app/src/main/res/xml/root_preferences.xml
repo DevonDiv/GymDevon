@@ -20,6 +20,14 @@
             app:key="large_text"
             app:title="Enable Large Text" />
 
+        <DropDownPreference
+            app:key="language"
+            app:title="Choose Language"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:useSimpleSummaryProvider="true"/>
+
+
     </PreferenceCategory>
 
 </PreferenceScreen>
