@@ -1,8 +1,10 @@
 package devondivinecz.com.BicepViewPager;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -82,6 +84,18 @@ public class BicepLayoutFragment extends Fragment {
         if(mParam3 != null) {
             TextView instructionView = view.findViewById(R.id.bicep_instructions);
             instructionView.setText(mParam3);
+        }
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean textSize = sharedPreferences.getBoolean("large_text", false);
+
+
+
+        if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            TextView title = view.findViewById(R.id.bicep_title);
+            TextView instructions = view.findViewById(R.id.bicep_instructions);
+            title.setTextSize(40);
+            instructions.setTextSize(18);
         }
 
         return view;
