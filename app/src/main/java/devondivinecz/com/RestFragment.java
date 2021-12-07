@@ -1,15 +1,18 @@
 package devondivinecz.com;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.provider.AlarmClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -63,6 +66,8 @@ public class RestFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_rest, container, false);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean textSize = sharedPreferences.getBoolean("large_text", false);
 
         Button thirtySecondButton = view.findViewById(R.id.thirtySecondButton);
 
@@ -93,6 +98,17 @@ public class RestFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            TextView title = view.findViewById(R.id.rest_title);
+            Button button = view.findViewById(R.id.thirtySecondButton);
+            Button button1 = view.findViewById(R.id.fortyFiveSecondButton);
+            Button button2 = view.findViewById(R.id.minuteButton);
+            title.setTextSize(40);
+            button.setTextSize(18);
+            button1.setTextSize(18);
+            button2.setTextSize(18);
+        }
 
         return view;
     }

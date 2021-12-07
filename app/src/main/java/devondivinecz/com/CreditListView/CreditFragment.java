@@ -1,13 +1,16 @@
 package devondivinecz.com.CreditListView;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -76,6 +79,15 @@ public class CreditFragment extends Fragment {
         creditList.add(new CreditList("Translation: https://www.deepl.com/en/translator"));
 
         creditsList.setAdapter(new CreditListViewAdapter(getContext(), creditList));
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean textSize = sharedPreferences.getBoolean("large_text", false);
+
+        if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            TextView title = view.findViewById(R.id.creditTitle);
+
+            title.setTextSize(40);
+        }
 
 
         return view;

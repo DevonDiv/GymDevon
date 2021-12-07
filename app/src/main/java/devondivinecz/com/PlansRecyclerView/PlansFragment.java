@@ -1,10 +1,12 @@
 package devondivinecz.com.PlansRecyclerView;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -183,6 +185,20 @@ public class PlansFragment extends Fragment {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(new WorkoutRecyclerViewAdapter(workouts));
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean textSize = sharedPreferences.getBoolean("large_text", false);
+
+        if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            backButton.setTextSize(18);
+            bicepButton.setTextSize(18);
+            chestButton.setTextSize(18);
+            forearmButton.setTextSize(18);
+            legButton.setTextSize(18);
+            shoulderButton.setTextSize(18);
+            trapsButton.setTextSize(18);
+            tricepButton.setTextSize(18);
+        }
 
         return view;
     }

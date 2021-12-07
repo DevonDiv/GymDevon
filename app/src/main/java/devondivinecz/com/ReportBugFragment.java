@@ -1,15 +1,18 @@
 package devondivinecz.com;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,6 +79,16 @@ public class ReportBugFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean textSize = sharedPreferences.getBoolean("large_text", false);
+
+        if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            TextView title = view.findViewById(R.id.report_title);
+            Button button = view.findViewById(R.id.report_button);
+            title.setTextSize(40);
+            button.setTextSize(18);
+        }
 
         return view;
     }

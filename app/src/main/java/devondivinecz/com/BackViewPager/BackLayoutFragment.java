@@ -1,8 +1,10 @@
 package devondivinecz.com.BackViewPager;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
@@ -83,6 +85,18 @@ public class BackLayoutFragment extends Fragment {
         if(mParam3 != null) {
             TextView instructionView = view.findViewById(R.id.back_instructions);
             instructionView.setText(mParam3);
+        }
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean textSize = sharedPreferences.getBoolean("large_text", false);
+
+
+
+        if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            TextView title = view.findViewById(R.id.back_title);
+            TextView instructions = view.findViewById(R.id.back_instructions);
+            title.setTextSize(40);
+            instructions.setTextSize(18);
         }
 
         return view;
