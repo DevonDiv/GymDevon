@@ -1,9 +1,11 @@
 package devondivinecz.com;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,6 +65,9 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean textSize = sharedPreferences.getBoolean("large_text", false);
+
         TextView plansTextView = view.findViewById(R.id.plans_content);
 
         plansTextView.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +85,11 @@ public class HomeFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_home_to_home_gym);
             }
         });
+
+        if(textSize = sharedPreferences.getBoolean("large_text", false)) {
+            plansTextView.setTextSize(18);
+            homeGymTextView.setTextSize(18);
+        }
 
 
         return view;

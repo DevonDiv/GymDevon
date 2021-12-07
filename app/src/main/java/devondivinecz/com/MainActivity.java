@@ -1,6 +1,7 @@
 package devondivinecz.com;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import devondivinecz.com.databinding.ActivityMainBinding;
 
@@ -38,8 +40,11 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+                String name = sharedPreferences.getString("signature", "");
+                String accountNumber = sharedPreferences.getString("account_number", "");
                 Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:2263457080"));
-                intent.putExtra("sms_body", "Hello:\n");
+                intent.putExtra("sms_body", "Hello my name is " + name + " and my account number is " + accountNumber);
                 startActivity(intent);
             }
         });
